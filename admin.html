@@ -318,7 +318,7 @@
   if (!token) return;
 
   try {
-    const res = await fetch('https://license-server-iul9.onrender.com/admin/api/view_keys', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/api/check_keys', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`
