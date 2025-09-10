@@ -340,17 +340,17 @@
   ✅ Status: <span style="color: ${entry.status === 'active' ? '#28a745' : '#6c757d'}; font-weight: bold;">
     ${entry.status.charAt(0).toUpperCase() + entry.status.slice(1)}
   </span><br>
-  ⏳ Expires: ${entry.expiry_date}<br><br>
-  <button onclick="deleteKey('${entry.key}', '${entry.user_email}')" style="
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
-    font-weight: bold;
-  ">Delete</button>
-  <hr>
-`;
+    ⏳ Expires: ${entry.expiry_date}<br><br>
+    <button onclick="deleteKey('${entry.key}', '${entry.user_email}')" style="
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      font-weight: bold;
+    ">Delete</button>
+    <hr>
+  `;
         list.appendChild(item);
       });
 
