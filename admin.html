@@ -232,7 +232,7 @@
   }
 
   try {
-    const res = await fetch('https://hbase-render.onrender.com/admin/login', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -276,7 +276,7 @@
   }
 
   try {
-    const res = await fetch('https://hbase-render.onrender.com/admin/api/issue_key', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/api/issue_key', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -318,7 +318,7 @@
   if (!token) return;
 
   try {
-    const res = await fetch('https://hbase-render.onrender.com/admin/api/view_keys', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/api/view_keys', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`
@@ -368,7 +368,7 @@
   if (!token || !confirm(`Are you sure you want to delete key:\n${key}\nfor ${email}?`)) return;
 
   try {
-    const res = await fetch('https://hbase-render.onrender.com/admin/api/delete_key', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/api/delete_key', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
