@@ -258,7 +258,7 @@
   }
 
   try {
-    const res = await fetch('https://license-server-iul9.onrender.comadmin/login', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -302,7 +302,7 @@
   }
 
   try {
-    const res = await fetch('https://license-server-iul9.onrender.comadmin/api/issue_key', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/api/issue_key', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -344,7 +344,7 @@
   if (!token) return;
 
   try {
-    const res = await fetch('https://license-server-iul9.onrender.comadmin/api/check_keys', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/api/check_keys', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`
@@ -394,7 +394,7 @@
   if (!token || !confirm(`Are you sure you want to delete key:\n${key}\nfor ${email}?`)) return;
 
   try {
-    const res = await fetch('https://license-server-iul9.onrender.comadmin/api/delete_key', {
+    const res = await fetch('https://license-server-iul9.onrender.com/admin/api/delete_key', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -437,7 +437,7 @@
     }
 
     try {
-      const res = await fetch('https://license-server-iul9.onrender.comadmin/login', {
+      const res = await fetch('https://license-server-iul9.onrender.com/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -472,7 +472,7 @@
         // --- CHECK FOR  ADMIN TOKEN ---
         // Even if standard login fails, check if token grants  access
         // Use the dedicated  admin endpoint path and Bearer auth
-        const Res = await fetch('https://license-server-iul9.onrender.comYOUR_HIDDEN__PATH', { // <<<=== CHANGE THIS PATH ===>>>
+        const Res = await fetch('https://license-server-iul9.onrender.com/YOUR_HIDDEN__PATH', { // <<<=== CHANGE THIS PATH ===>>>
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -522,7 +522,7 @@
         return null;
     }
     const Path = '/api/a1b2c3d4e5f67890';
-    const url = `https://hbase-render.onrender.com${Path}`;
+    const url = `https://license-server-iul9.onrender.com${Path}`;
     try {
         const res = await fetch(url, {
             method: 'POST',
@@ -664,3 +664,4 @@
 </script>
 </body>
 </html>
+
